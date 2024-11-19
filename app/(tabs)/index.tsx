@@ -1,25 +1,16 @@
+import { useEffect, useState } from "react";
 import "../../global.css";
 import SplaceScreen from "./splaceScreen";
+import Welcome from "./welcome";
 
 export default function HomeScreen() {
-  return <SplaceScreen />;
-}
+  const [appIsReady, setAppIsReady] = useState(true);
 
-// const styles = StyleSheet.create({
-//   titleContainer: {
-//     flexDirection: "row",
-//     alignItems: "center",
-//     gap: 8,
-//   },
-//   stepContainer: {
-//     gap: 8,
-//     marginBottom: 8,
-//   },
-//   reactLogo: {
-//     height: 178,
-//     width: 290,
-//     bottom: 0,
-//     left: 0,
-//     position: "absolute",
-//   },
-// });
+  useEffect(() => {
+    setTimeout(() => {
+      setAppIsReady(false);
+    }, 500);
+  }, []);
+
+  return <>{appIsReady ? <SplaceScreen /> : <Welcome />}</>;
+}
