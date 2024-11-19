@@ -16,7 +16,7 @@ const Authentication = () => {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View className="min-h-full">
-        <View className="h-2/3 w-full bg-[#FFA451] flex justify-center items-center  relative">
+        <View className="h-[60%] w-full bg-[#FFA451] flex justify-center items-center  relative">
           <View className="absolute right-8 top-60">
             <Image
               source={require("../../assets/images/f-drop.png")}
