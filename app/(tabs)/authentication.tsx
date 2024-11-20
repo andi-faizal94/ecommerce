@@ -1,6 +1,6 @@
 import { View, Text, Image, SafeAreaView } from "react-native";
 import React from "react";
-import AppButton from "./appButton";
+import AppButton from "./app-button";
 import { useRouter } from "expo-router";
 import {
   GestureHandlerRootView,
@@ -12,8 +12,7 @@ const Authentication = () => {
   const router = useRouter();
 
   const handlePress = () => {
-    router.push(`/(tabs)/orderList`);
-    console.log({ router });
+    router.push(`/(tabs)/order-list`);
   };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

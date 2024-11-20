@@ -1,6 +1,6 @@
 import { View, Text, Image, SafeAreaView } from "react-native";
 import React from "react";
-import AppButton from "./appButton";
+import AppButton from "./app-button";
 import { useRouter } from "expo-router";
 
 const Welcome = () => {

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../global.css";
-import SplaceScreen from "./splaceScreen";
+import SplaceScreen from "./splace-screen";
 import Welcome from "./welcome";
 
 export default function HomeScreen() {

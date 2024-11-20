@@ -11,7 +11,6 @@ export default function TabLayout() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="splace-screen" options={{ headerShown: false }} />
       <Stack.Screen name="welcome" options={{ headerShown: false }} />
       <Stack.Screen name="authentication" options={{ headerShown: false }} />
@@ -28,7 +27,7 @@ export default function TabLayout() {
       <Stack.Screen name="complete-order" options={{ headerShown: false }} />
       <Stack.Screen name="home-screen" options={{ headerShown: false }} />
       <Stack.Screen name="input-detail" options={{ headerShown: false }} />
-      <Stack.Screen name="track-orde" options={{ headerShown: false }} />
+      <Stack.Screen name="track-order" options={{ headerShown: false }} />
       <Stack.Screen name="+not-found" />{" "}
     </Stack>
   );
