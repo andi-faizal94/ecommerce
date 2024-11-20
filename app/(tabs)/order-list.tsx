@@ -11,16 +11,28 @@ import {
 import AppButton from "./app-button";
 import Button from "@/components/Button";
 import { useRouter } from "expo-router";
+import Entypo from "@expo/vector-icons/Entypo";
 
 const orderList = () => {
   const [modalVisible, setModalVisible] = useState(false);
   const [modalNested, setModalNested] = useState(false);
 
   const router = useRouter();
+
+  const onPress = () => {
+    console.log("coba");
+  };
   return (
     <View>
-      <View className="flex flex-row justify-center items-center h-[18%] bg-[#FFA451]">
-        <Text className="text-white">My Basket</Text>
+      <View className="flex flex-row justify-center items-center h-[18%] bg-[#FFA451] relative">
+        <Text className="text-white text-2xl font-bold">My Basket</Text>
+        <Pressable
+          className="p-2 border-2 rounded-lg border-[#FFA451] bg-white absolute left-5 flex flex-row justify-center items-center"
+          onPress={onPress}
+        >
+          <Entypo name="chevron-left" size={20} color="black" />
+          <Text className="text-[#010100] text-center">Go Back</Text>
+        </Pressable>
       </View>
       <View className="h-[67%]">
         <Card
