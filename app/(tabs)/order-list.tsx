@@ -214,9 +214,10 @@ const orderList = () => {
               <View className="w-full h-[30%] flex flex-row justify-center items-center bg-[#FFA451] mt-16">
                 <View>
                   <Button
-                    text={"Pay On Delivery"}
+                    text={"Complete Order"}
                     onPress={() => {
                       setModalVisible(false);
+                      setModalNested(false);
                       router.push("/(tabs)/complete-order");
                     }}
                   />
