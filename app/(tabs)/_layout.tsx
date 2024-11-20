@@ -1,11 +1,5 @@
-import { Stack, Tabs } from "expo-router";
+import { Stack } from "expo-router";
 import React from "react";
-import { Platform } from "react-native";
-
-import { HapticTab } from "@/components/HapticTab";
-import { IconSymbol } from "@/components/ui/IconSymbol";
-import TabBarBackground from "@/components/ui/TabBarBackground";
-import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 
 export default function TabLayout() {
@@ -17,9 +11,24 @@ export default function TabLayout() {
         headerShown: false,
       }}
     >
+      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
       <Stack.Screen name="splace-screen" options={{ headerShown: false }} />
       <Stack.Screen name="welcome" options={{ headerShown: false }} />
       <Stack.Screen name="authentication" options={{ headerShown: false }} />
+      <Stack.Screen
+        name="order-list"
+        options={{
+          headerShown: false,
+
+          title: "orderList",
+        }}
+      />
+      <Stack.Screen name="add-to-cart" options={{ headerShown: false }} />
+      <Stack.Screen name="complete-detail" options={{ headerShown: false }} />
+      <Stack.Screen name="complete-order" options={{ headerShown: false }} />
+      <Stack.Screen name="home-screen" options={{ headerShown: false }} />
+      <Stack.Screen name="input-detail" options={{ headerShown: false }} />
+      <Stack.Screen name="track-orde" options={{ headerShown: false }} />
       <Stack.Screen name="+not-found" />{" "}
     </Stack>
   );

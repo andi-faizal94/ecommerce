@@ -6,13 +6,15 @@ import {
   GestureHandlerRootView,
   TextInput,
 } from "react-native-gesture-handler";
+import SearchInput from "@/components/SearchInput";
 
 const Authentication = () => {
   const router = useRouter();
 
-  // const handlePress = () => {
-  //   router.push("/(tabs)/splaceScreen");
-  // };
+  const handlePress = () => {
+    router.push(`/(tabs)/orderList`);
+    console.log({ router });
+  };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <View className="min-h-full">
@@ -79,7 +81,7 @@ const Authentication = () => {
               title="Lets Continue"
               size="sm"
               backgroundColor="#FF8D4D"
-              // onPress={handlePress}
+              onPress={handlePress}
             />
           </View>
         </View>
