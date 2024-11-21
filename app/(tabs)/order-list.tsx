@@ -20,14 +20,16 @@ const orderList = () => {
   const router = useRouter();
 
   const onPress = () => {
-    console.log("coba");
+    router.push("/(tabs)/add-to-cart");
   };
   return (
     <View>
       <View className="flex flex-row justify-center items-center h-[18%] bg-[#FFA451] relative">
-        <Text className="text-white text-2xl font-bold">My Basket</Text>
+        <Text className="text-white text-2xl font-bold absolute top-20">
+          My Basket
+        </Text>
         <Pressable
-          className="p-2 border-2 rounded-lg border-[#FFA451] bg-white absolute left-5 flex flex-row justify-center items-center"
+          className="p-2 border-2 rounded-lg border-[#FFA451] bg-white absolute left-5 top-20 flex flex-row justify-center items-center"
           onPress={onPress}
         >
           <Entypo name="chevron-left" size={20} color="black" />

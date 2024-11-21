@@ -12,7 +12,7 @@ const Authentication = () => {
   const router = useRouter();
 
   const handlePress = () => {
-    router.push(`/(tabs)/order-list`);
+    router.push(`/(tabs)/add-to-cart`);
   };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -77,7 +77,7 @@ const Authentication = () => {
 
           <View className="mx-5 mt-5">
             <AppButton
-              title="Lets Continue"
+              title="Start Ordering"
               size="sm"
               backgroundColor="#FF8D4D"
               onPress={handlePress}
