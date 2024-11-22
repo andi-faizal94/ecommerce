@@ -12,7 +12,7 @@ const Authentication = () => {
   const router = useRouter();
 
   const handlePress = () => {
-    router.push(`/(tabs)/add-to-cart`);
+    router.push(`/(tabs)/home-screen`);
   };
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

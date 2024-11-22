@@ -31,12 +31,12 @@ const CompleteOrder = () => {
       </View>
       <View className="mt-14 mx-32">
         <AppButton
-          title="Checkout"
+          title="Track Order"
           size="sm"
           backgroundColor="#FF8D4D"
-          // onPress={() => {
-          //   setModalVisible(!modalVisible);
-          // }}
+          onPress={() => {
+            router.push("/(tabs)/track-order");
+          }}
         />
       </View>
       <View className="mt-14 mx-16">
