@@ -33,6 +33,6 @@ Welcome to the **E-commerce App**! This is a modern, scalable, and customizable 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-repository/ecommerce-app.git
-   cd ecommerce-app
+   git clone https://github.com/andi-faizal94/ecommerce.git
+   cd ecommerce
    ```
