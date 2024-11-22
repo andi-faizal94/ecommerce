@@ -1,19 +1,9 @@
-import Card from "@/components/Card";
-import React, { useState } from "react";
-import {
-  Image,
-  Modal,
-  Pressable,
-  StyleSheet,
-  Text,
-  TextInput,
-  View,
-} from "react-native";
-import AppButton from "./app-button";
-import Button from "@/components/Button";
-import { useRouter } from "expo-router";
-import Entypo from "@expo/vector-icons/Entypo";
 import { Octicons } from "@expo/vector-icons";
+import Entypo from "@expo/vector-icons/Entypo";
+import { useRouter } from "expo-router";
+import React, { useState } from "react";
+import { Image, Pressable, StyleSheet, Text, View } from "react-native";
+import AppButton from "./app-button";
 
 const AddToCart = () => {
   const [modalVisible, setModalVisible] = useState(false);
@@ -22,7 +12,7 @@ const AddToCart = () => {
   const router = useRouter();
 
   const onPress = () => {
-    console.log("coba");
+    router.push("/(tabs)/home-screen");
   };
   return (
     <View className="bg-[#FFA451]">

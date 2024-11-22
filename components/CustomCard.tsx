@@ -19,12 +19,12 @@ const CustomCard = () => {
         </Pressable>
       </View>
       <View>
-        <Text className="mt-2">Honey lime combo</Text>
+        <Text className="mt-2 text-base font-medium">Honey lime combo</Text>
       </View>
       <View className="flex flex-row justify-between w-[85%] pt-2 ">
-        <Text>2000</Text>
+        <Text className="text-[#FFA451]">2000</Text>
         <Pressable className="p-2 rounded-2xl " onPress={() => console.log("")}>
-          <Fontisto name="plus-a" size={10} color="black" />
+          <Fontisto name="plus-a" size={10} color="#FFA451" />
         </Pressable>
       </View>
     </View>

@@ -1,9 +1,8 @@
-import { View, Text, Image, SafeAreaView, Pressable } from "react-native";
-import React from "react";
-import SearchInput from "@/components/SearchInput";
-import { Fontisto, Octicons } from "@expo/vector-icons";
 import CustomCard from "@/components/CustomCard";
+import SearchInput from "@/components/SearchInput";
 import { useRouter } from "expo-router";
+import React from "react";
+import { Image, Pressable, SafeAreaView, Text, View } from "react-native";
 
 const HomeScreen = () => {
   const router = useRouter();
@@ -23,15 +22,17 @@ const HomeScreen = () => {
           />
         </View>
         <View>
-          <Image
-            className="mr-5"
-            source={require("../../assets/images/image-5.png")}
-            style={{
-              resizeMode: "cover",
-              width: 100,
-              height: 100,
-            }}
-          />
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <Image
+              className="mr-5"
+              source={require("../../assets/images/image-5.png")}
+              style={{
+                resizeMode: "cover",
+                width: 100,
+                height: 100,
+              }}
+            />
+          </Pressable>
         </View>
       </View>
       <Text className="text-3xl mb-4 w-[76%] mx-5 antialiased tracking-wide">
@@ -46,13 +47,19 @@ const HomeScreen = () => {
         </Text>
 
         <View className="flex flex-row justify-between overflow-scroll">
-          <CustomCard />
-          <CustomCard />
-          <CustomCard />
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <CustomCard />
+          </Pressable>
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <CustomCard />
+          </Pressable>
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <CustomCard />
+          </Pressable>
         </View>
 
-        <View className="flex flex-row justify-around items-center">
-          <Text>Hottest</Text>
+        <View className="flex flex-row justify-around items-center mt-3 mb-3">
+          <Text className="text-2xl font-bold">Hottest</Text>
           <Text>Popular</Text>
           <Text>New Combo</Text>
           <Text>Top</Text>
@@ -61,8 +68,12 @@ const HomeScreen = () => {
           <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
             <CustomCard />
           </Pressable>
-          <CustomCard />
-          <CustomCard />
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <CustomCard />
+          </Pressable>
+          <Pressable onPress={() => router.push("/(tabs)/add-to-cart")}>
+            <CustomCard />
+          </Pressable>
         </View>
       </View>
     </SafeAreaView>
