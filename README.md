@@ -19,7 +19,7 @@ Welcome to the **E-commerce App**! This is a modern, scalable, and customizable 
 - **Styling**: [Nativewind](https://www.nativewind.dev/)
 - **Backend**: [Node.js](https://nodejs.org/)
 - **Assets**: [ExpoIcons.js](https://icons.expo.fyi/Index)
-- **UIDesign**: [Node.js](<https://www.figma.com/design/G4E1rKhBI9dpfuRO3NJ4Ik/Mobile-UI-Kit%3A-Ecommerce-(Community)?node-id=47-3556&node-type=frame&t=1nSopFEdWRaTaZwA-0>)
+- **UIDesign**: [UIDesign-Adolphus Chris](https://www.figma.com/community/file/875021148028188871/mobile-ui-kit-ecommerce)
 
 ## Installation
 
